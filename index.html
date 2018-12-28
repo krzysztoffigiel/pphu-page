@@ -14,17 +14,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <style>
-    body {
-      padding-top: 50px;
-      padding-bottom: 20px;
-    }
-  </style>
   <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- less -->
+  <link rel="stylesheet/less" type="text/css" href="styles/styles.less" />
+  <link rel="stylesheet/less" type="text/css" href="styles/global.less" />
+  <link rel="stylesheet/less" type="text/css" href="styles/menu.less" />
+  <link rel="stylesheet/less" type="text/css" href="styles/mixins.less" />
+
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+
 </head>
 
 <body>
@@ -36,10 +42,10 @@
     <nav>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
           <a href="#">Settings</a>
@@ -48,7 +54,15 @@
     </nav>
   </header>
 
-  <section class="welcome"></section>
+  <section>
+    <div class="img">
+      <div class="wrapper">
+        <div class="jumbotron welcome-header text-center">
+          <h1 class="animated fadeInLeft">PPHU Jacek Surdyk</h1>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <div class="container">
     <!-- Example row of columns -->
@@ -79,7 +93,7 @@
     <hr>
 
     <footer>
-      <p>&copy; Company 2015</p>
+      <p>&copy; Krzysztof Figiel</p>
     </footer>
   </div> <!-- /container -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
