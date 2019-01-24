@@ -15,6 +15,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700i,800&amp;subset=latin-ext" rel="stylesheet">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
     crossorigin="anonymous">
@@ -34,12 +35,13 @@
 </head>
 
 <body>
+
   <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <header>
-    <nav>
+    <nav class="page-nav" data-spy="affix" data-offset-top="50">
       <ul>
         <li>
           <a href="#home">Home</a>
@@ -58,13 +60,16 @@
     <div class="img">
       <div class="wrapper">
         <div class="jumbotron welcome-header text-center">
-          <h1 class="animated fadeInLeft">PPHU Jacek Surdyk</h1>
+          <div class="blur-bg">child</div>
+          <img class="recycling-logo" src="img/recycling-logo.png" alt="recycling">
+          <h1 class="animated fadeInLeft">PPHU JACEK SURDYK</h1>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="container">
+  <div class="container" id="cont">
+    <p id="demo"></p>
     <!-- Example row of columns -->
     <div class="row">
       <div class="col-md-4">
@@ -113,6 +118,7 @@
         r.parentNode.insertBefore(e, r)
       }(window, document, 'script', 'ga'));
     ga('create', 'UA-XXXXX-X', 'auto'); ga('send', 'pageview');
+    
   </script>
 </body>
 

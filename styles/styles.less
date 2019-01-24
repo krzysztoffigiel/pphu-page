@@ -1,9 +1,34 @@
+// nav menu
+.affix {
+    font-size: 15px;
+    top: 0;
+    width: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    background-color: rgb(28, 107, 81);
+    a {
+        color: white !important;
+        padding: 10px;
+        -webkit-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+    }
+}
+
+.affix-top a {
+    padding: 25px !important;
+}
+
+.affix + .container-fluid {
+    padding-top: 200px;
+}
+
 // section welcome
 .img {
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background: url('/img/img01.jpg') center center no-repeat scroll rgb(28, 107, 81);
+    background-image: url('/img/img01.jpg');
     height: 100%;
     .wrapper {
         height: 100vh;
@@ -14,10 +39,25 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: transparent;
-            width: 80%;
-            border: 3px solid #f1f1f1;
+            width: 70%; // border: 5px solid rgb(28, 107, 81);
+            .recycling-logo {
+                height: 20vh;
+                width: auto;
+                z-index: 999999;
+            }
             h1 {
-                color: white;
+                color: lightgray;
+                font-size: 5vw;
+            }
+            .blur-bg {
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                height: 100%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                overflow: hidden;
+                filter: blur(13px);
             }
         }
     }
@@ -30,5 +70,5 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.65);
 }
